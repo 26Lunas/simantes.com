@@ -205,6 +205,10 @@ section h2 {
     border-radius: 30px;
     font-size: 13pt;
     margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-solicitar-servicio:hover {
@@ -214,6 +218,12 @@ section h2 {
 }
 
 /*Fin section services */
+
+/* Section unidad de negocio*/
+.carrusel-unidad-de-negocio{
+    border: solid 2px red;
+}
+/* Fin Section unidad de negocio */
 
 /* Section conocenos */
 .section-conocenos {
@@ -269,7 +279,7 @@ section h2 {
 
 .cont-text-img p {
     /* border: solid 1px red; */
-    width: 51%;
+    width: 47%;
     text-align: justify;
     font-weight: 500;
     font-size: 11.5pt;
@@ -313,10 +323,11 @@ section h2 {
     font-size: 14.6pt;
 }
 
-.cont-iconos {
+.cont-aboutus .cont-iconos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 4%;
 }
 
 .icono-aboutus {
@@ -327,11 +338,15 @@ section h2 {
     padding-top: 1%;
 }
 
-.icono-aboutus img {
-    width: 75px;
-    height: 75px;
+.cont-aboutus .icono-aboutus img {
+    width: 55px;
+    height: 55px;
     color: var(--colorAzulClaro);
     border-radius: 0;
+    
+}
+.cont-aboutus img{
+    object-fit: cover;
 }
 
 .icono-aboutus p {
