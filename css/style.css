@@ -435,6 +435,7 @@ section h2 {
 
 /* Proyect destacados */
 .section-proyect-destados {
+    z-index: 888;
     position: absolute;
     /* border: solid 1px red; */
     width: 100%;
@@ -603,6 +604,7 @@ section h2 {
 
 /* Contacto */
 .section-contacto {
+    z-index: 999;
     /* border: solid 1px red; */
     /* position: relative; */
     /* top: 145vh; */
@@ -613,6 +615,7 @@ section h2 {
 .section-contacto h2 {
     text-align: center;
     margin-bottom: 6%;
+    color: var(--colorAzulClaro);
 }
 
 .cont-info-form {
