@@ -252,11 +252,40 @@ section h2 {
     background: var(--colorBlanco);
 }
 .slider-item-unidad-de-negocio .cont-card img{
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .slider-01{
     background: url('../img/unidad_de_negocio/puerto1.png');
     background-size: cover;
+}
+.card-title{
+    margin-top: 3%;
+    padding: 0 2%;
+    border-bottom: solid 3px var(--colorAzulClaro);
+    margin-bottom: 5%;
+}
+.card-title h4{
+    font-weight: 700;
+    margin: 0;
+    font-size: 33px;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+}
+.card-text{
+    width: 378px;
+}
+.btn-info-unidad{
+    background: var(--colorAzulClaro);
+    padding: 15px 20px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
 }
 
 /* Fin Section unidad de negocio */
