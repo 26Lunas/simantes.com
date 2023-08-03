@@ -279,6 +279,10 @@ section h2 {
 .card-text{
     width: 378px;
 }
+.card-text p{
+    font-size: 24px;
+    text-align: justify;
+}
 .btn-info-unidad{
     background: var(--colorAzulClaro);
     padding: 15px 20px;
@@ -286,6 +290,10 @@ section h2 {
     font-size: 18px;
     font-weight: 700;
     border-radius: 20px;
+}
+.btn-info-unidad:hover{
+    color: #000;
+    border: solid 2px var(--colorAzulClaro);
 }
 
 /* Fin Section unidad de negocio */
