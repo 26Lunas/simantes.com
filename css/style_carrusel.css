@@ -10,6 +10,10 @@
   height: 100%;
   overflow: hidden;
 }
+.swiper-container .swiper-wrapper{
+    /* border: solid 2px orangered; */
+    width: 1110%;
+}
 
 .container .swiper-slide {
   /* border: solid 1px rgb(136, 255, 0); */

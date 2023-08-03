@@ -70,21 +70,28 @@
     flex-direction: row;
 
 }
-
-.cont-redes>a>svg {
-    width: 25px;
-    height: 25px;
+.cont-redes a{
+    background: var(--colorAzulClaro);
+    border-radius: 2px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-redes svg {
+    width: 20px;
+    height: 20px;
     margin: 4px;
 
 }
 
 .cont-redes .cls-1 {
-    fill: var(--colorAzulClaro);
-}
-
-.cont-redes .cls-2 {
     fill: var(--colorBlanco);
 }
+/* 
+.cont-redes .cls-2 {
+    fill: var(--colorBlanco);
+} */
 
 /* Fin Redes sociales */
 
@@ -361,8 +368,10 @@ section h2 {
 
 .section-proyect-destados h2 {
     position: relative;
-    top: 10%;
+    top: 5%;
+    color: var(--colorBlanco);
 }
+
 
 .cont-video {
     /* border: solid 1px red; */
@@ -445,7 +454,7 @@ section h2 {
 }
 
 .cont-proyecto{
-    border: solid 2px var(--colorAzulClaro);
+    border: solid 3px var(--colorAzulClaro);
     width: 419px;
     border-radius: 40px;
     display: flex;
@@ -472,9 +481,11 @@ section h2 {
 }
 .cont-proyectos .cont-subtitle{
     text-align: center;
+    /* border: solid 1px red; */
+    width: 90%;
 }
 .cont-proyectos .cont-subtitle h4{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     margin: 0;
 }
