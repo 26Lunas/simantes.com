@@ -224,8 +224,9 @@ section h2 {
     /* border: solid 2px red; */
     position: relative;
     left: -4.9vw;
-    height: 109vh;
+    height: 100vh;
     width: 99vw;
+    margin-bottom: 2%;
 }
 .carrusel-unidad-de-negocio{
     /* border: solid 2px var(--colorAzulClaro); */
@@ -257,6 +258,10 @@ section h2 {
 }
 .slider-01{
     background: url('../img/unidad_de_negocio/puerto1.png');
+    background-size: cover;
+}
+.slider-02{
+    background: url('../img/unidad_de_negocio/pintura3.jpg');
     background-size: cover;
 }
 .card-title{
