@@ -19,7 +19,9 @@
 .cont-proyect-futures .cont-portada h5{
     width: 944px;
     font-size: 25px;
-    
+}
+.cont-proyect-futures .cont-portada h2{
+    font-weight: 700;
 }
 .navbar-proyect{
     margin-bottom: 0;
