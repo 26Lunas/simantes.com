@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <meta name="autor" content="Yamir Serret" />
+    <meta name="Empresa" content="BIGI" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_carrusel.css" />
+    <link rel="stylesheet" href="css/style_proyect.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style_carrusel.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>SIMANTES</title>
+  </head>
+
+  <body>
+    <div class="container-fluid cont-main">
+      <!-- navbar -->
+      <nav class="navbar navbar-proyect navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo_simantes_1.png" class="logo_1"
+          /></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link activado menu_item"
+                  aria-current="page"
+                  href="index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu_item" href="index.html#servicios">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu_item" href="index.html#aboutus">CONÓCENOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu_item" href="index.html#proyect"
+                  >PROYECTOS DESTACADOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu_item" href="index.html#contact">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cont-redes">
+            <a href class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 79.78">
+                <g id="Capa_2" data-name="Capa 2">
+                  <g id="Graphic_Elements" data-name="Graphic Elements">
+                    <path
+                      class="cls-1"
+                      d="M44.18,33.69c1.11-1.25,2-2.51,3.16-3.58a17.35,17.35,0,0,1,12.47-4.93,29.22,29.22,0,0,1,7.85,1c5.86,1.69,9.26,5.73,10.89,11.45A48.34,48.34,0,0,1,80,50.71c0,9.32,0,18.65,0,28,0,.87-.24,1.1-1.1,1.1q-7.22-.06-14.41,0c-.85,0-1-.26-1-1.06q0-13.31,0-26.61a23.78,23.78,0,0,0-.78-6.61c-1.15-4-4-6-8.17-5.79-5.69.3-8.66,3.12-9.38,8.91a32.27,32.27,0,0,0-.26,4.16c0,8.63,0,17.26,0,25.89,0,.86-.22,1.12-1.1,1.11-4.83,0-9.67,0-14.51,0-.78,0-1-.2-1-1q0-25.64,0-51.25c0-.85.27-1.05,1.07-1,4.6,0,9.19,0,13.79,0,.84,0,1.06.26,1,1.06C44.15,29.6,44.18,31.65,44.18,33.69Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M17.86,53.21c0,8.46,0,16.91,0,25.36,0,.94-.23,1.22-1.2,1.21-4.8,0-9.61,0-14.41,0-.77,0-1-.18-1-1q0-25.67,0-51.33c0-.71.18-1,.93-1,4.87,0,9.74,0,14.61,0,.94,0,1.07.36,1.06,1.16Q17.84,40.43,17.86,53.21Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M19.18,9.54A9.59,9.59,0,1,1,9.61,0,9.61,9.61,0,0,1,19.18,9.54Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></button>
+        </div>
+      </nav>
+      <!-- FIN navbar -->
+      <div class="cont-header-main-proyect">
+        <div class="cont-proyect-futures">
+          <div class="cont-portada">
+            <h2>PROYECTOS DESTACADOS</h2>
+            <h5>
+              A lo largo de los años, nos hemos caracterizado por la excelente
+              fabricación, reparación, ensamble y mantenimiento de maquinarias
+              para empresas de alto renombre en el país.
+            </h5>
+          </div>
+          <div class="cont-slider-proyect">
+            <div
+              id="carouselProyect"
+              class="carousel slide"
+              data-bs-ride="true"
+              data-interval="500"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselProyect"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProyect"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProyect"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProyect"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProyect"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    class="cont-proyectos proyect-item-1 proyect-futures-slider"
+                  >
+                    <div class="cont-proyecto proyect-1">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_cerrejon.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON CERREJÓN</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>REPARACION GENERAL Y PINTURA CABINA</h4>
+                        <h4>RETROEXCAVADORA JOHN DERRE 220DW-ACC</h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/cerrejon/Reparacion general y pintura cabina retroezcabadora john deere 220DW-ACC/Sin título-01-06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-2">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_austin.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON AUSTIN</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>ARMADO Y SOLDADURA DE 6 CANOPYS DE TOLVA 793</h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/Austin/Reparacion de baldes ex 3600 No 105 y 109/Sin 1-06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-3">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_epsa.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON EPSA</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>MECANIZADO EN SITIO CON TORNOS</h4>
+                        <h4>
+                          PORTATILES-EQUIPO PESADO CAT, KOMUTSU Y LIEBHEER
+                        </h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/epsa/mecanizado en sitio con tornos portatiles-equipo pesado cat, komatsu y liebheer/Sin título--06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div
+                    class="cont-proyectos proyect-item-1 proyect-futures-slider"
+                  >
+                    <div class="cont-proyecto proyect-4">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_nts.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON NTS</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>
+                          REPARACION GENERAL Y PINTURA DE CABINAS CAT 345C,.
+                          834B, 777F, D9L Y 16F
+                        </h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/nts/Reparacion y pintura de guardas y plataformas cat 834B y 777F/Sin título-06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-5">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_chm.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON CHM</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>
+                          OVERHAUL DE CABINA DE CAMION MINERO HITACHI EH5000 AC
+                          II
+                        </h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/chm/Overhaul de cabina de camion minero hitachi EH5000AC II/sin-06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-6">
+                      <div class="cont-logo-title">
+                        <img
+                          src="img/featured_projects/logo_empresas/logo_petromil.svg"
+                          alt
+                        />
+                        <h6>PROYECTOS CON PETROMIL</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>
+                          MANTENIMIENTO DE TANQUE DE COMBUSTIBLE TK 1010-CONTROL
+                          DE CORROSION
+                        </h4>
+                      </div>
+                      <div class="cont-img-proyect">
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-02.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-03.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-04.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-05.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/petromil/Mantenimiento de tanque de combustible tk 1010- control de corrosion/Sin título-06.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div
+                    class="cont-proyectos proyect-item-1 proyect-futures-slider"
+                  >
+                    <div class="cont-proyecto proyect-7">
+                      <div class="cont-logo-title">
+                        <h6>PROYECTOS</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>MAQUINANDO DE ALOJAMIENTOS</h4>
+                      </div>
+                      <div class="cont-img-proyect proyecto-7">
+                        <img
+                          src="img/featured_projects/Proyect/maquinando de alojamientos/Sin título--01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/maquinando de alojamientos/Sin título--02.jpg"
+                          alt
+                        />
+                        <img
+                          src="img/featured_projects/Proyect/maquinando de alojamientos/Sin título--03.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-8">
+                      <div class="cont-logo-title">
+                        <h6>PROYECTOS</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>REPARACIÓN DE COMPONENTES EN FIBRA DE VIDRIO</h4>
+                      </div>
+                      <div class="cont-img-proyect proyecto-8">
+                        <img
+                          src="img/featured_projects/Proyect/reparacion de componentes en fibra de vidrio/Sin título-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/reparacion de componentes en fibra de vidrio/Sin título-02.jpg"
+                          alt
+                        />
+                        <img
+                          src="img/featured_projects/Proyect/reparacion de componentes en fibra de vidrio/Sin título-03.jpg"
+                          alt
+                        />
+                        <img
+                          src="img/featured_projects/Proyect/reparacion de componentes en fibra de vidrio/Sin título-04.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+
+                    <div class="cont-proyecto proyect-9">
+                      <div class="cont-logo-title">
+                        <h6>PROYECTOS</h6>
+                      </div>
+                      <div class="cont-subtitle">
+                        <h4>CORTE EN CNC</h4>
+                      </div>
+                      <div class="cont-img-proyect proyecto-7">
+                        <img
+                          src="img/featured_projects/Proyect/corte en cnc/Sin título-20-01.jpg"
+                          alt
+                        />
+
+                        <img
+                          src="img/featured_projects/Proyect/corte en cnc/Sin título-20-02.jpg"
+                          alt
+                        />
+                        <img
+                          src="img/featured_projects/Proyect/corte en cnc/Sin título-20-03.jpg"
+                          alt
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProyect"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProyect"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="section-footer">
+        <div class="cont-logo-description">
+          <img src="img/logo_simantes_1.png" alt />
+          <p>
+            En SIMANTES SAS nos dedicamos hace mas de 10 años al mantenimiento,
+            reparación, fabricación de componentes y partes de equipos e
+            infraestructura de las industrias de la minería, construcción y
+            petróleos.
+          </p>
+        </div>
+        <div class="cont-enlaces-info">
+          <div class="cont-enlaces-1">
+            <h5>Enlaces de interés</h5>
+            <p><a href="#">Certificación RUT</a></p>
+            <p>
+              <a href="#" class="cert-siso-img"
+                >Certificación
+                <img src="img/featured_projects/logo_empresas/SISO.png" alt
+              /></a>
+            </p>
+            <p><a href="index.html#unidad_de_negocio">Unidades de negocio</a></p>
+            <p><a href="proyect-futures.html">Proyecto destacados</a></p>
+          </div>
+          <div class="cont-enlaces-2">
+            <h5>Información de Contacto</h5>
+            <p>6053148405</p>
+            <p>CARRERA 34 #107 - 79 BODEGA 2 Barranquilla, Atlántico</p>
+            <p>soporte@simantes.com</p>
+          </div>
+        </div>
+      </footer>
+      <div class="cont-footer-blue">
+        SIMANTES&copy;2023 todos los derechos reservados
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+    <!-- Bootstrap 5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesone -->
+    <script
+      src="https://kit.fontawesome.com/34c89acf97.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carrusel-pd.js"></script>
+  </body>
+</html>

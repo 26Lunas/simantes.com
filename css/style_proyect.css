@@ -1,0 +1,41 @@
+
+.cont-proyect-futures{
+    /* border: solid 1px blue; */
+}
+.cont-proyect-futures .cont-portada{
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/featured_projects/logo_empresas/fondo.jpg');
+    background-size: cover;
+    color: var(--colorBlanco);
+    /* filter: brightness(0.7); */
+    text-align: center;
+}
+.cont-proyect-futures .cont-portada h5{
+    width: 944px;
+    font-size: 25px;
+    
+}
+.navbar-proyect{
+    margin-bottom: 0;
+}
+
+
+.cont-slider-proyect{
+    /* border: solid 2px red; */
+    width: 72%;
+    margin: auto;
+}
+.cont-proyecto{
+    padding: 2%;
+    width: 419px !important;
+    height: 589px !important;
+}
+.proyect-futures-slider{
+
+}
