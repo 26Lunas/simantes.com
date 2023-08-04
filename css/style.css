@@ -265,7 +265,15 @@ section h2 {
     background-size: cover;
 }
 .slider-02{
+    background: url('../img/unidad_de_negocio/mina2.png');
+    background-size: cover;
+}
+.slider-03{
     background: url('../img/unidad_de_negocio/pintura3.jpg');
+    background-size: cover;
+}
+.slider-04{
+    background: url('../img/unidad_de_negocio/suministro4.png');
     background-size: cover;
 }
 .card-title{
